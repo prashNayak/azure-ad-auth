@@ -32,7 +32,6 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
 
     @Override
     public void configure(final HttpSecurity http) throws Exception {
- System.out.println("kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk");
         http
                 .authorizeRequests(authorize -> authorize
                         .antMatchers("/api/v1/**").authenticated()
